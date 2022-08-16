@@ -1,0 +1,82 @@
+td:nth-child(2){
+    text-align: center;
+    min-width: 50px;
+}
+table{
+    
+    /*min-width: 350px;*/
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr,td {
+    
+    border: 1px solid black;
+    
+}
+td{
+    padding: 5px;
+}
+h1,h2,h3,h4{
+    text-align: center;
+}
+
+#frames{
+    max-width: 95%;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+#gifDataDiv p,#gifDataDiv input[type=text]{
+    display: inline-block;
+    width: 40%;
+    margin-top: 2px;
+margin-bottom: 2px;
+}
+#gifDataDiv > *{
+    text-align: center;
+    width: fit-content;
+    min-width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#gifDataDiv{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:75%;
+}
+.section{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width:75%;
+    max-width: fit-content;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#section1 button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background-color: aliceblue;
+ /*   color: navy;*/
+}
+.jsgif{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+#bottomCards{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    
+}

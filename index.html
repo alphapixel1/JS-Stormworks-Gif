@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/buzzfeed/libgif-js@master/libgif.js"></script>
+        <script src="video.js"></script>
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+    <body>
+        <h1>GIF To Stormworks Video</h1>
+        <div id="section1" class="section">
+            <h2>Pick GIF</h2>
+            <input type="file" name="picField" id="picField" autocomplete="off" accept="image/gif"/>
+            <p>Gif Must Be 32x32, 64x64 or 96x96</p>
+            <p>Tools: <a href="#">EzGif.com</a></p>
+            <h2 class="ignore" style="visibility: hidden;">Loading</h2>
+            <img id="outImage" rel:auto_play="0" rel:rubbable="0">
+            <br>
+            <button id="StartButton" style="width:200px;visibility:hidden">Start</button>
+            
+        </div>
+        
+
+        
+        <div id="gifDataDiv" class="section" style="display: none;"><!--Gif info-->
+            <h3>Frames</h3>
+            <div id="frames"></div>
+            <h3>Gif Data</h3>
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Frames</td>
+                            <td id="frameCount">0</td>
+                        </tr>
+                        <tr>
+                            <td>Size</td>
+                            <td id="frameSize">0x0</td>
+                        </tr>
+                        <tr>
+                            <td>Estimated Component Count</td>
+                            <td id="estComponentCount">0</td>
+                        </tr>
+                        <tr>
+                            <td>Estimated Compressed Component Count</td>
+                            <td id="estCompressedComponentCount">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="nameDiv">
+                <p>Microcontroller Name</p><input id="nameInput" type="text">
+                <br>
+                <p>Compressed</p><input id="compressedCheck" type="checkbox" checked>
+                <br>
+                <p>Gamma Correction</p><input id="gammaCheck" type="checkbox" checked>
+                <br>
+                <p style="vertical-align: super;">Ticks Per Frame</p>
+                <input name="tpf" type="range" min="1" max="20" step="1" value="1" autocomplete="off"></input><label style="margin-left: 5px;vertical-align: super;">1</label>
+                <a style="vertical-align: super;" href="#" id="sliderHelp">?</a>
+
+                
+            </div>
+            <button id="scene2Start">Start</button>
+        </div>
+        <div id="section3" class="section" style="width: 400px; display: none;">
+            <h2>Starting</h2>
+            <meter value="0" style="height: 100; width: 250px;"></meter>
+            <h4></h4>
+        </div>
+        <div id="section4" class="section" style="display: none;">
+            <h1>Done</h1>
+            <h3><a>Download Microcontroller XML</a></h3>
+            <h3>Take the file from your downloads and place it in</h3>
+            <h3>%APPDATA%\Stormworks\data\microprocessors</h3>
+            <h4><a href="./index.html">Convert More Videos</a></h4>
+        </div>
+        <script  src="script.js"></script>
+        <div id="bottomCards">
+            Made By Alphapixel, Checkout <a href="https://steamcommunity.com/id/alphapixel/myworkshopfiles/?appid=573090">Alphapixels Workshop</a>
+        </div>
+    </body>
+</html>
