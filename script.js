@@ -56,7 +56,7 @@ document.getElementById("StartButton").onclick=function(){
           rub.load(function() {
             document.getElementById("section1").remove();
             //console.log(rub)
-            
+            console.log("RUB",rub);
             for (var i = 0; i < rub.get_length(); i++) {
               
               rub.move_to(i);
@@ -94,13 +94,7 @@ function cloneCanvas(oldCanvas) {
     //return the new canvas
     return newCanvas;
 }
-    
 
-/*function clearFrames(){
-    while (frames.firstChild) {
-        frames.removeChild(frames.firstChild);
-    }
-}*/
 function updateGifData(){
     document.getElementById("frameCount").innerHTML=frames.children.length;
     document.getElementById("frameSize").innerHTML=frames.firstChild.width+"x"+frames.firstChild.height
